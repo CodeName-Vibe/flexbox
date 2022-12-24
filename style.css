@@ -19,7 +19,6 @@ a {
 }
 header {
     width: 100%;
-    height: 130px;
 }
 [class*="menu-"] {
     width: 100%;
@@ -102,6 +101,7 @@ header {
     background-image: url(images/img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 .main>h1 {
@@ -151,7 +151,7 @@ header {
 }
 .table {
     border: rgb(0, 255, 0) solid 1px;
-    margin: 20px;
+    margin: 20px 0px;
 }
 .table td{
     color: rgb(0, 255, 0);
@@ -210,14 +210,13 @@ header {
     background-image: url(images/8.jpg);
 }
 .video-url {
-    width: 900px;
-    height: 600px;
+    width: 1200px;
+    height: 800px;
     margin: 40px;
 }
 
 [class*="footer-"] {
     width: 100%;
-    height: 80px;
     background-color: black;
     justify-content: space-around;
     text-align: center;
@@ -229,17 +228,91 @@ header {
     padding: 10px 0px;
 }
 @media(max-width: 1439px) {
-    .menu-1 {
-        border: 2px solid white;
+    [class*="menu-"] a {
+    font-size: 30px;
+    padding: 15px;
+    margin: 15px 18px;
+    border: 4px solid black;
+    border-radius: 8px;
+    }
+    .video-url {
+        width: 900px;
+        height: 600px;
+    }
+    [class*="footer-"] p {
+        font-size: 17px;
+        width: 150px;
     }
 }
 @media(max-width: 1023px) {
-    .menu-1 {
-        border: 2px solid pink;
+    [class*="menu-"] a {
+        font-size: 25px;
+        padding: 10px;
+        margin: 15px 6px;
+        border: 3px solid black;
+        border-radius: 6px;
+    }
+    .video-url {
+        width: 600px;
+        height: 350px;
+    }
+    [class*="footer-"] p {
+        font-size: 14px;
+        width: 100px;
     }
 }
 @media(max-width: 767px) {
-    .menu-1 {
+    [class*="menu-"] a {
+        font-size: 11px;
+        padding: 2px;
+        margin: 10px 2px;
         border: 2px solid black;
+        border-radius: 4px;
+    }
+    .main>h1 {
+        padding: 20px 20px 0px;
+        font-size: 40px;
+    }
+    .subtext {
+        font-size: 15px;
+        width: 275px;
+        padding: 20px;
+    }
+    .form>p {
+        font-size: 25px;
+    }
+    [class*="form-text"] {
+        width: 300px;
+        border-width: 2px;
+    }
+    .form-button {
+        height: 60px;
+        border-width: 2px;
+    }
+    .table td {
+        font-size: 15px;
+    }
+    .table>tbody>tr+tr>td+td {
+        height: 80px;
+        width: 80px;
+        padding: 5px;
+    }
+    .first-row>td {
+        height: 50px;
+        width: 60px;
+    }
+    .first-row>td+td {
+        width: 80px;
+    }
+    [class*="photo-"] {
+        width: 60px;
+    }
+    .video-url {
+        width: 300px;
+        height: 175px;
+    }
+    [class*="footer-"] p {
+        font-size: 8px;
+        width: 50px;
     }
 }
