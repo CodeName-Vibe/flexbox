@@ -25,6 +25,7 @@ header {
     width: 100%;
     background-color: black;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .menu-1, .footer-1 {
     border: 2px solid red;
